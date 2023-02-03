@@ -37,17 +37,6 @@ CREATE TABLE `messages` (
   `msg` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Volcado de datos para la tabla `messages`
---
-
-INSERT INTO `messages` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) VALUES
-(1, 1622688038, 340066300, 'hola man'),
-(2, 340066300, 1622688038, 'bien'),
-(3, 1622688038, 340066300, 'hola'),
-(4, 340066300, 1622688038, 'hola'),
-(5, 440971576, 1622688038, 'hola pedro, necesito tu ayuda'),
-(6, 1622688038, 440971576, 'hola Mauricio, claro, dime !!');
 
 -- --------------------------------------------------------
 
@@ -65,19 +54,6 @@ CREATE TABLE `users` (
   `img` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Volcado de datos para la tabla `users`
---
-
-INSERT INTO `users` (`user_id`, `unique_id`, `fname`, `lname`, `email`, `password`, `img`, `status`) VALUES
-(1, 1622688038, 'Mauricio', 'Sevilla', 'hola@configuroweb.com', '4b67deeb9aba04a5b54632ad19934f26', '1652660564avatar.png', 'Disponible'),
-(2, 340066300, 'Juan', 'Usuario', 'jusuario@cweb.com', '4b67deeb9aba04a5b54632ad19934f26', '1652660638staff-avatar.png', 'Desconectad@'),
-(3, 440971576, 'Pedro', 'Usuario', 'pusuario@cweb.com', '4b67deeb9aba04a5b54632ad19934f26', '1652670758chatbot.png', 'Disponible');
-
---
--- Índices para tablas volcadas
---
 
 --
 -- Indices de la tabla `messages`
