@@ -1,14 +1,11 @@
---CREAR UNA BASE DE DATOS LLAMADA 'chat' !!
-
-
 -- phpMyAdmin SQL Dump
--- version 5.3.0-dev
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 192.168.30.23
--- Tiempo de generación: 30-01-2023 a las 06:57:19
--- Versión del servidor: 8.0.18
--- Versión de PHP: 7.4.33
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 16-05-2022 a las 17:12:53
+-- Versión del servidor: 10.4.21-MariaDB
+-- Versión de PHP: 8.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -21,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `chat`
+-- CREAR BASE DE DATOS: `chat`
 --
 
 -- --------------------------------------------------------
@@ -35,10 +32,9 @@ CREATE TABLE `messages` (
   `incoming_msg_id` int(255) NOT NULL,
   `outgoing_msg_id` int(255) NOT NULL,
   `msg` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
--- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `users`
@@ -53,7 +49,8 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `img` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 --
 -- Indices de la tabla `messages`
