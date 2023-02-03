@@ -10,16 +10,16 @@ if (isset($_SESSION['unique_id'])) {
 <body>
   <div class="wrapper">
     <section class="form signup">
-      <header>Sistema de Chat en Línea en PHP y MySQL</header>
+      <header>Chat</header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="name-details">
           <div class="field input">
-            <label>Tu nombre</label>
+            <label>Nombre</label>
             <input type="text" name="fname" placeholder="Nombre" required>
           </div>
           <div class="field input">
-            <label>Tu apellido</label>
+            <label>Apellido</label>
             <input type="text" name="lname" placeholder="Apellido" required>
           </div>
         </div>
@@ -33,7 +33,7 @@ if (isset($_SESSION['unique_id'])) {
           <i class="fas fa-eye"></i>
         </div>
         <div class="field image">
-          <label>Tu Avatar</label>
+          <label>Avatar</label>
           <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
         </div>
         <div class="field button">
